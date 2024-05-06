@@ -7,7 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-        <script>
+        
+        <p>Age Checker</p>
+        <input type="number" id="ageee">
+        
+    
+        <p id="ans"></p>
+    <script>
+
+const ageInput = document.getElementById("ageee");
+  const ansElement = document.getElementById("ans");
+
+
+     ageInput.addEventListener("input" ,function(){
+        const Age = parseInt(ageInput.value)
+        if(Age >18){
+            ansElement.innerHTML = " Your are Adult!";
+        }else{
+            ansElement.innerHTML = " Your are still underage!";
+     
+        }
+
+
+     })
+      
+
+
 
             const points =[1,8,4,28];
 
